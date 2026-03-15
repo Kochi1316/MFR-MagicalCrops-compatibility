@@ -37,7 +37,10 @@ public class Plantable implements IFactoryPlantable {
     }
 
     private boolean isValidSoil(Block ground) {
-        return ground == Blocks.farmland || ground == MFR_FERTILE_SOIL;
+        return ground == Blocks.farmland
+                || ground == Blocks.dirt
+                || ground == Blocks.grass
+                || ground == MFR_FERTILE_SOIL;
     }
 
     @Override
